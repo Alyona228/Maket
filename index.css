@@ -62,6 +62,10 @@ li:last-children {
   left: 0px;
   width: 100%;
 }
+.mobail {
+  display: none;
+}
+
 /* домашняя страница */
 .hero_content {
   display: flex;
