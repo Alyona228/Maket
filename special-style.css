@@ -70,6 +70,7 @@ main {
   display: none;
 }
 .blok {
+  display: inline-block;
   font-family: 'Heebo';
   background-color: #edf7fa;
   height: 642px;
