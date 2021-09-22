@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Home page</title>
-  <link rel="stylesheet" href="./index.css"> 
+  <link rel="stylesheet" href="./src/styles/posts.css"> 
+  <link rel="stylesheet" href="./src/styles/works.css"> 
+ 
   <link rel="stylesheet" href="./src/work1.css"> 
-  <link rel="stylesheet" media="screen and (max-width: 479px) " href="./special-style.css">
+  <!-- <link rel="stylesheet" media="screen and (max-width: 479px) " href="./special-style.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
@@ -17,7 +19,7 @@
 <link rel= "Heebo" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class='header'>
+  <div class='layout'>
   <div class="header_menu">
   <nav class='menu_body'>
   <ul class= 'menu_list'>
@@ -40,37 +42,7 @@
       Donload Resume 
     </button>
 </div>
-<div class="blok">
-  <div class='blok_p'>
-        Recent posts
-  </div>
-  <div class="container_lrmb-top">
-    <div class="container_mh">
-      <p>
-        Making a design system from scratch
-      </p>
-    </div>
-    <div class="container_data">
-      <div class="data_left">12 Feb 2020</div><div class="data_right">Design, Pattern</div>
-    </div>
-    <div class="container_txt">
-Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    </div>
-  </div>
-  <div class=".container_lrmb">
-    <div class="container_mh">
-      <p>
-        Creating pixel perfect icons in Figma
-      </p>
-    </div>
-    <div class="container_data">
-      <div class="data_left">12 Feb 2020</div><div class="data_right">Design, Pattern</div>
-    </div>
-    <div class="container_txt">
-Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    </div>
-  </div>
-</div>
+
 <!-- mobail -->
 <main >
       <div class="hero_content">
@@ -89,88 +61,80 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. V
  </div>
 </main>
 <!-- два контейнера  начало-->
-<div class="conteiner__too">
-  <div class='conteiner_heder'>
-    <p class='conteiner_heder-left'>Recent posts</p>
-    <p class='conteiner_heder-right'>View all</p>
-  </div>
-<div class="container">
-  <div class="container_left">
-    <div class="container_left_h">
-      <p>
-        Making a design system from scratch
-      </p>
+<div class="posts">
+  <div class="posts_container">
+    <div class='posts_header'>
+          Recent posts
     </div>
-    <div class="container_data">
-      <div class="data_left">12 Feb 2020
+    <div class="posts_content">
+      <div class="posts_post">
+        <div class="posts_title">
+            Making a design system from scratch
+        </div>
+        <div class="posts_info">
+          <div class="posts_date">12 Feb 2020</div><div class="posts_format">Design, Pattern</div>
+        </div>
+        <div class="posts_text">
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </div>
       </div>
-      <div class="data_right">Design, Pattern
-      </div>
+      <div class="posts_post">
+        <div class="posts_title">
+            Creating pixel perfect icons in Figma
+        </div>
+        <div class="posts_info">
+          <div class="posts_date">12 Feb 2020</div><div class="posts_format">Design, Pattern</div>
+        </div>
+        <div class="posts_text">
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </div>
     </div>
-    <div class="container_left_txt">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    </div>
-  </div>
-  <div class="container_right">
-    <div class="container_righ_h">
-      <p>
-        Creating pixel perfect icons in Figma
-      </p>
-    </div>
-    <div class="container_data">
-      <div class="data_left">12 Feb 2020</div><div class="data_right"> Figma, Icon Design</div>
-    </div>
-    <div class="container_righ_txt">
-Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
     </div>
   </div>
-</div>
 </div>
 <!-- два контейнера  конец -->
 
-<!-- начинается дизайнерский блок -->
-<div class="work_content">
-
-  <div class="work">
-    <button class='container_btn'>Featured works</button>
-    <div class="work_cont">
-      <div class="work_img">
-        <img src="../src/im1.jpg" alt='рисунок'/>
+<!-- начинается блок избранные работы -->
+<div class="works">
+  <div class="work_featured">
+    <div class='works_header'>Featured works</div>
+    <div class="works_container">
+      <div class="works_imge">
+        <img src="./src/img/im1.jpg" alt='рисунок'/>
       </div>
-      <div class="work_content">
-        <div class="work_content_h">Designing Dashboards</div>
-        <div class="work_content_data">
-          <div class='data'>2020</div><span>Dashboard</span> </div>
-          <div class="work_content_p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+      <div class="works_content">
+        <div class="works_title">Designing Dashboards</div>
+        <div class="works_data">
+          <div class='works_data_info'>2020</div><span>Dashboard</span> </div>
+          <div class="works_description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
         </div>
       </div>
-      <div class="work_cont">
-        <div class="work_img">
-          <img src="../src/im2.png" alt='рисунок'/>
+      <div class="works_container">
+        <div class="works_imge">
+          <img src="./src/img/im2.png" alt='рисунок'/>
         </div>
-        <div class="work_content">
-          <div class="work_content_h">Vibrant Portraits of 2020</div>
-          <div class="work_content_data">
-            <div class='data'>2020</div><span>Illustration</span> </div>
-            <div class="work_content_p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+        <div class="works_content">
+          <div class="works_title">Vibrant Portraits of 2020</div>
+          <div class="works_data">
+            <div class='works_data_info'>2020</div><span>Illustration</span> </div>
+            <div class="works_description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
           </div>
         </div>
-        <div class="work_cont">
-          <div class="work_img">
-            <img src="../src/im3.jpg" alt='рисунок'/>
+        <div class="works_container">
+          <div class="works_imge">
+            <img src="./src/img/im3.jpg" alt='рисунок'/>
           </div>
-          <div class="work_content">
-            <div class="work_content_h">36 Days of Malayalam type</div>
-            <div class="work_content_data">
-              <div class='data'>2020</div><span>Typography</span> </div>
-              <div class="work_content_h_3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-              </div>
+          <div class="works_content">
+            <div class="works_title">36 Days of Malayalam type</div>
+            <div class="works_data">
+              <div class='works_data_info'>2020</div><span>Typography</span> </div>
+              <div class="works_description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
             </div>
           </div>
-        </div>
-        
-      </div>
-      <!-- fotoor -->
+            </div>
+          </div>
+          <!-- закончился блок избранные работы -->
+    <!-- fotoor -->
         <div class="futter">
   <div class='futtet_icon'>
 <a href= '#facebook'>
