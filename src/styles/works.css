@@ -54,7 +54,7 @@
   line-height: 25px;
   margin-right: 26px;
 }
-span {
+.works_data span {
   font-size: 20px;
   font-weight: 400;
   line-height: 29px;
@@ -86,8 +86,6 @@ span {
     text-align: left;
     flex-direction: column;
     width: 344px;
-  }
-  .works_imge {
   }
   .works_content {
   }

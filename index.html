@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Home page</title>
+  <link rel="stylesheet" href="./src/styles/portfolio.css">
   <link rel="stylesheet" href="./src/styles/posts.css"> 
   <link rel="stylesheet" href="./src/styles/works.css"> 
- 
-  <link rel="stylesheet" href="./src/work1.css"> 
-  <!-- <link rel="stylesheet" media="screen and (max-width: 479px) " href="./special-style.css"> -->
+   <link rel="stylesheet" href="./src/work1.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
@@ -19,7 +18,7 @@
 <link rel= "Heebo" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class='layout'>
+  <div class='header'>
   <div class="header_menu">
   <nav class='menu_body'>
   <ul class= 'menu_list'>
@@ -28,38 +27,28 @@
       <li><a href ='./src/contact.html' class='menu_link'>Contact </a></li>
       <img src="src/hamburgermenu_120234.svg" class="img">
     </ul>
-    </nav>
+  </nav>
 </div>
-<!-- mobail -->
-<div class="mobail">
-  <div class="avatar"><img class='foto' src="./src/avatar.png" alt='text'/></div>
-  <div class="name">Hi, I am John, 
-    Creative Technologist</div>
-  <div class="description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-    sint. Velit officia consequat duis enim velit mollit.Exercitation veniam
-    consequat sunt nostrud amet </div>
-    <button class='mobail_btn'>
-      Donload Resume 
-    </button>
 </div>
-
-<!-- mobail -->
-<main >
-      <div class="hero_content">
-      <div class="hero_content-left">
-        <h2 class="foto_h">Hi, I am John, 
-          Creative Technologist </h2>
-    <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet<br>
-            sint. Velit officia consequat duis enim velit mollit.Exercitation veniam<br>
-            consequat sunt nostrud amet 
-      </p>
-      <button class = 'btn'>Donload Resume</button>
-      </div>
-      <div class ='hero_content-right'> <img class='foto' src="./src/avatar.png" alt='text'/>
-        
+<!-- начинается блок portfolio -->
+<div class="portfolio">
+  <div class="portfolio_biography">
+    <div class="portfolio_content">
+      <div class="portfolio_name">Hi, I am John, 
+        Creative Technologist</div>
+      <div class="portfolio_description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.Exercitation veniam
+        consequat sunt nostrud amet </div>
+        <button class='portfolio_btn'>
+          Donload Resume 
+        </button>
     </div>
- </div>
-</main>
+    <div class="portfolio_photo">
+      <img src="./src/img/Ellipse 1.jpg" alt='text'/>
+    </div>
+  </div>
+</div>
+<!-- the end portfolio -->
 <!-- два контейнера  начало-->
 <div class="posts">
   <div class="posts_container">
@@ -155,6 +144,5 @@
     Copyright ©2020 All rights reserved 
   </div>
   </div>
-</div>
 </body>
 </html>
